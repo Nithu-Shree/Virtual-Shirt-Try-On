@@ -14,7 +14,7 @@ hands = mp_hands.Hands(static_image_mode=False, max_num_hands=2, min_detection_c
 cap = cv2.VideoCapture(0)
 
 # Path to shirt images and load list of shirts
-shirtFolderPath = r"C:\Users\Ramesh\Virtual Shirt Try On\Shirts"
+shirtFolderPath = #path
 listShirts = os.listdir(shirtFolderPath)
 print("List of shirts:", listShirts)
 print(f"Number of shirts found: {len(listShirts)}")
@@ -26,7 +26,7 @@ shirtRatioHeightWidth = 591 / 490
 imageNumber = 0
 
 # Load button images
-imgButtonRight = cv2.imread(r"C:\Users\Ramesh\Virtual Shirt Try On\button.png", cv2.IMREAD_UNCHANGED)
+imgButtonRight = cv2.imread(#path, cv2.IMREAD_UNCHANGED)
 if imgButtonRight is None:
     print("Error loading right button image. Please check the path.")
     exit()
